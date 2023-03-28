@@ -54,6 +54,7 @@ li {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 12px;
 }
 
 .section__title {
@@ -70,9 +71,10 @@ li {
     right: 0;
     transition: all 300ms ease;
 }
-.link__hover-effect:hover:after{
+
+.link__hover-effect:hover:after {
     width: 100%;
-    left:0;
+    left: 0;
 }
 
 /*Navigation Bar */
@@ -84,6 +86,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 12px;
 }
 
 .nav__link--list {
@@ -98,7 +101,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-    background-color: blueviolet;
+    background-color: rgb(110, 114, 189);
     padding: 8px 20px;
     border-radius: 50px;
     color: white;
@@ -111,12 +114,12 @@ nav {
 
 .my_logo {
     font-size: 24px;
-    color: blueviolet;
+    color: rgb(110, 114, 189);
     margin: 0 12px;
     font-weight: bold;
 }
 
-/* About Me*/
+/* About  Me*/
 
 #about-me {
     min-height: 100vh;
@@ -334,3 +337,57 @@ footer {
 .footer__copyright {
     color: white;
 }
+
+/*Responisve Design for Phones*/
+@media(max-width: 768px) {
+    nav {
+        height: 68px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .about-me__info--para {
+        font-size: 12px;
+    }
+
+    .language {
+        width: calc(100% /3);
+    }
+    .project__description--para{
+        font-size: 14px;
+    }
+
+    .project__description{
+        left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/* SMALL PHONES*/
+@media(max-width: 480px){
+
+    .project__description--para{
+        display: none;
+    }
+
+    .project__description--links{
+        display: flex;
+        justify-content: center;
+    }
+
+    .project__description--title{
+        font-size: 32px;
+        line-height: 1;
+        text-align: center;
+    }
+
+    .project__description--sub-title{
+        text-align: center;
+        margin: 12px 0;
+    }
+}
+
+
+
